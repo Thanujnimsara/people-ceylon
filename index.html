@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Ceylon Private Limited | Vehicle & Equipment Finance Sri Lanka</title>
+  <meta name="description" content="People Ceylon Private Limited is Sri Lanka's trusted vehicle & equipment finance institution. Enjoy 2-hour approvals, up to 90% valuation, and lowest lease interest rates.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/images/peoples_ceylon_logo.jpg">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <!-- Top Utility Bar -->
+  <aside class="top-utility-bar">
+    <div class="container top-utility-container">
+      <div class="top-motto">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <span>PEOPLE CEYLON PRIVATE LIMITED &bull; SRI LANKA</span>
+      </div>
+
+      <div class="top-right-info">
+        <span>Official Vehicle &amp; Equipment Finance &bull; Ampara Branch</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Bank Navbar -->
+  <header class="main-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/peoples_ceylon_logo.jpg" alt="People Ceylon Logo" class="brand-logo-img">
+        <div class="brand-tagline-wrap">
+          <span class="brand-name">PEOPLE CEYLON</span>
+          <span class="brand-subtext">PRIVATE LIMITED</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="navbar-nav" id="navbarMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="calculator.html" class="nav-link">Lease Calculator</a></li>
+        <li><a href="packages.html" class="nav-link">Leasing Packages</a></li>
+        <li><a href="eligibility.html" class="nav-link">Eligibility & Documents</a></li>
+        <li><a href="eligibility.html#branches" class="nav-link">Branch</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-ctas">
+        <a href="calculator.html" class="btn btn-outline-red btn-sm">Calculate Quote</a>
+        <button class="btn btn-primary btn-sm" onclick="openApplyModal('Express Lease Pre-Approval')">Apply Now</button>
+      </div>
+
+      <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Toggle Navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Full-Width Colourful Promotional Leasing Banner Slider -->
+  <section class="fullwidth-hero-banner-section" id="heroBannerSection">
+    <div class="banner-slider-track">
+      <!-- Slide 1: Private & Luxury Vehicle Leasing -->
+      <div class="banner-slide active" id="bannerSlide1">
+        <a href="calculator.html" title="Click to open Lease Calculator">
+          <img src="assets/images/leasing_hero_banner.jpg" alt="People Ceylon Private Limited - Drive Your Dream Today" class="banner-slide-img">
+        </a>
+      </div>
+
+      <!-- Slide 2: Commercial & Agricultural Fleet Leasing -->
+      <div class="banner-slide" id="bannerSlide2">
+        <a href="packages.html" title="Click to view Leasing Packages">
+          <img src="assets/images/leasing_commercial_banner.jpg" alt="People Ceylon Private Limited - Commercial and Agricultural Leasing" class="banner-slide-img">
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="banner-nav-btn banner-nav-prev" onclick="prevBannerSlide()" aria-label="Previous Slide">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="banner-nav-btn banner-nav-next" onclick="nextBannerSlide()" aria-label="Next Slide">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <!-- Indicator Dots -->
+    <div class="banner-dots-wrap">
+      <button class="banner-dot active" onclick="goToBannerSlide(0)" aria-label="Slide 1"></button>
+      <button class="banner-dot" onclick="goToBannerSlide(1)" aria-label="Slide 2"></button>
+    </div>
+  </section>
+
+  <!-- Dual Featured Promotional Banners Section -->
+  <section class="campaign-banners-section">
+    <div class="container">
+      <div class="section-header text-center" style="margin-bottom: 30px;">
+        <span class="badge-tag">EXCLUSIVE OFFERS</span>
+        <h2 class="section-title">Special <span>Promotional Leasing Offers</span></h2>
+        <p class="section-subtitle">Take advantage of our limited-time competitive leasing packages designed for personal luxury and commercial growth.</p>
+      </div>
+
+      <div class="campaign-banners-grid">
+        <!-- Banner Card 1: Drive Your Dream Today -->
+        <article class="campaign-banner-card">
+          <div class="campaign-banner-media">
+            <a href="calculator.html" title="Drive Your Dream Today - Calculate Lease">
+              <img src="assets/images/leasing_hero_banner.jpg" alt="People Ceylon Private Limited - Drive Your Dream Today" loading="lazy">
+            </a>
+          </div>
+          <div class="campaign-banner-body">
+            <div>
+              <span class="badge-tag badge-gold" style="font-size: 0.75rem; margin-bottom: 8px;">PERSONAL &amp; LUXURY LEASING</span>
+              <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--pc-navy); margin-bottom: 8px;">Drive Your Dream Today</h3>
+              <p style="font-size: 0.9rem; color: #64748B; line-height: 1.5; margin-bottom: 16px;">
+                Flexible finance, swift approval, and nationwide reach. Get up to 90% vehicle valuation with minimal guarantor requirements.
+              </p>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="calculator.html" class="btn btn-outline-red btn-sm">Calculate Rental</a>
+              <button class="btn btn-primary btn-sm" onclick="openApplyModal('Drive Your Dream Today - Personal Lease')">Apply Online</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Banner Card 2: Commercial & Agricultural Leasing -->
+        <article class="campaign-banner-card">
+          <div class="campaign-banner-media">
+            <a href="packages.html#commercial" title="Commercial & Agricultural Leasing - View Packages">
+              <img src="assets/images/leasing_commercial_banner.jpg" alt="People Ceylon Private Limited - Commercial and Agricultural Leasing" loading="lazy">
+            </a>
+          </div>
+          <div class="campaign-banner-body">
+            <div>
+              <span class="badge-tag" style="font-size: 0.75rem; margin-bottom: 8px;">COMMERCIAL &amp; AGRICULTURE</span>
+              <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--pc-navy); margin-bottom: 8px;">Commercial &amp; Agricultural Leasing</h3>
+              <p style="font-size: 0.9rem; color: #64748B; line-height: 1.5; margin-bottom: 16px;">
+                Lowest monthly rentals with 2-hour express approval. Custom-tailored fleet and agricultural finance to power your enterprise.
+              </p>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="packages.html#commercial" class="btn btn-outline-red btn-sm">Fleet Packages</a>
+              <button class="btn btn-gold btn-sm" onclick="openApplyModal('Commercial & Agricultural Lease')">Apply Online</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Leasing Campaign Poster Showcase Section -->
+  <section class="video-showcase-section" style="padding: 60px 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center;">
+        
+        <!-- Official Promotion Poster Card -->
+        <div style="background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.35); border: 3px solid var(--pc-gold); transition: transform 0.3s ease;">
+          <a href="calculator.html" title="Click to calculate rental for this promotion">
+            <img src="assets/images/leasing_promo_poster.jpg" alt="පොඩි කාර් ලොකු ලීසිං - People Ceylon Private Limited" style="width: 100%; height: auto; display: block;">
+          </a>
+        </div>
+
+        <!-- Poster Promotional Details & Actions -->
+        <div>
+          <span class="badge-tag badge-gold">විශේෂ ලීසිං ප්‍රවර්ධන දීමනාව</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2.3rem; font-weight: 900; color: #fff; margin: 12px 0 16px; line-height: 1.25;">
+            පොඩි කාර් <span>ලොකු ලීසිං!</span>
+          </h2>
+          <p style="color: #CBD5E1; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">
+            හිතේ හැටියට පොඩි වාහනයක් තියෙන ගාණට ලීසිං පහසුකම් ලබාගන්න. අඩුම පොලී අනුපාත, එක්දින කඩිනම් අනුමැතිය, සහ නොමිලේ වාහන තක්සේරුව සමඟින් ඔබේ සිහින වාහනය අදම ඔබේ කරගන්න.
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px;">
+            <div style="background: rgba(255,255,255,0.06); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--pc-gold);">
+              <div style="font-size: 1.1rem; font-weight: 800; color: var(--pc-gold);">අඩුම ලීසිං වාරිකය</div>
+              <div style="font-size: 0.78rem; color: #94A3B8;">Lowest Monthly Installment</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--pc-red);">
+              <div style="font-size: 1.1rem; font-weight: 800; color: #fff;">ඉහළම ලීසිං මුදල</div>
+              <div style="font-size: 0.78rem; color: #94A3B8;">Up to 90% Valuation</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid var(--pc-gold);">
+              <div style="font-size: 1.1rem; font-weight: 800; color: var(--pc-gold);">නොමිලේ තක්සේරුව</div>
+              <div style="font-size: 0.78rem; color: #94A3B8;">Free Vehicle Valuation</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); padding: 14px; border-radius: var(--radius-md); border-left: 3px solid #25D366;">
+              <div style="font-size: 1.1rem; font-weight: 800; color: #25D366;">එක්දින ලීසිං සේවාව</div>
+              <div style="font-size: 0.78rem; color: #94A3B8;">1-Day Express Approval</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <button class="btn btn-gold btn-lg" onclick="openApplyModal('පොඩි කාර් ලොකු ලීසිං Special Promotion')">දැන්ම අයදුම් කරන්න</button>
+            <a href="calculator.html" class="btn btn-outline-white btn-lg">වාරිකය ගණනය කරන්න</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Leasing Packages Showcase -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge-tag">BESPOKE FINANCING</span>
+        <h2 class="section-title">Our Premier <span>Leasing Packages</span></h2>
+        <p class="section-subtitle">Whether acquiring your first personal vehicle, upgrading a logistics fleet, or unlocking cash flow against your car, People Ceylon Private Limited delivers unmatched speed and flexibility.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Personal Car & SUV -->
+        <div class="product-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/suv.jpg" alt="Personal Car and SUV Leasing Sri Lanka">
+            <span class="vehicle-badge-overlay">Personal Car &amp; SUV</span>
+            <span class="vehicle-price-tag">From 11.45% p.a.</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title" style="margin-top: 4px;">Personal Car &amp; SUV Leasing</h3>
+            <span class="card-subtitle">Up to 90% Valuation &bull; 7-Year Tenure</span>
+            <p style="font-size: 0.85rem; color: #64748B; margin: 12px 0 14px;">Brand new, unregistered, or pre-owned Japanese and European cars. Competitive rates from 11.45% p.a. with minimal guarantor criteria.</p>
+            <ul class="card-feature-list">
+              <li class="card-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Approval within 2 working hours.</span>
+              </li>
+              <li class="card-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Doorstep documentation anywhere in Sri Lanka.</span>
+              </li>
+            </ul>
+            <div class="card-actions">
+              <a href="packages.html#car" class="btn btn-outline-red btn-sm">Package Details &rarr;</a>
+              <button class="btn btn-gold btn-sm" onclick="openApplyModal('Personal Car & SUV Lease')">Apply Lease</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial Fleet & Heavy Trucks -->
+        <div class="product-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/truck.jpg" alt="Commercial Fleet and Heavy Trucks Sri Lanka">
+            <span class="vehicle-badge-overlay">Commercial Logistics</span>
+            <span class="vehicle-price-tag">From 12.25% p.a.</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title" style="margin-top: 4px;">Commercial &amp; Heavy Trucks</h3>
+            <span class="card-subtitle">Cargo, Lorries &amp; Prime Movers</span>
+            <p style="font-size: 0.85rem; color: #64748B; margin: 12px 0 14px;">Power your logistics, distribution, or transport enterprise with customized seasonal cash flow payment models.</p>
+            <ul class="card-feature-list">
+              <li class="card-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Structured fleet discounts for business operators.</span>
+              </li>
+              <li class="card-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Cash flow-friendly balloon rentals available.</span>
+              </li>
+            </ul>
+            <div class="card-actions">
+              <a href="packages.html#commercial" class="btn btn-outline-red btn-sm">Fleet Solutions &rarr;</a>
+              <button class="btn btn-primary btn-sm" onclick="openApplyModal('Commercial Fleet Lease')">Inquire Fleet</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speed Draft Cash -->
+        <div class="product-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/carkeys.jpg" alt="Speed Draft Cash against Vehicle Logbook">
+            <span class="vehicle-badge-overlay">Instant Cash</span>
+            <span class="vehicle-price-tag">Cash in 3 Hours</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title" style="margin-top: 4px;">Speed Draft / Fast Cash</h3>
+            <span class="card-subtitle">Cash Against Vehicle Logbook (CR)</span>
+            <p style="font-size: 0.85rem; color: #64748B; margin: 12px 0 14px;">Unlock instant liquidity against your existing vehicle without surrendering ownership. Drive your vehicle while using working capital.</p>
+            <ul class="card-feature-list">
+              <li class="card-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Cash disbursed within 3 hours of valuation.</span>
+              </li>
+              <li class="card-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Up to 80% market cash release against CR book.</span>
+              </li>
+            </ul>
+            <div class="card-actions">
+              <a href="packages.html#speed" class="btn btn-outline-red btn-sm">Speed Draft &rarr;</a>
+              <button class="btn btn-gold btn-sm" onclick="openApplyModal('Speed Draft Fast Cash')">Get Instant Cash</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="packages.html" class="btn btn-primary btn-lg">View All 6 Leasing Packages &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Vehicles Calculated Showcase with Real Photos -->
+  <section class="section" style="background: #fff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge-tag">POPULAR IN SRI LANKA</span>
+        <h2 class="section-title">Popular Models &amp; <span>Calculated Rentals</span></h2>
+        <p class="section-subtitle">Real-world Sri Lankan market valuations with instant pre-calculated rentals.</p>
+      </div>
+
+      <div class="vehicles-grid">
+        <!-- Hybrid -->
+        <div class="vehicle-showcase-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/hybrid.jpg" alt="Toyota Aqua &amp; Prius Hybrid">
+            <span class="vehicle-badge-overlay">Eco Hybrid / EV</span>
+            <span class="vehicle-price-tag">Rs. 8,200,000</span>
+          </div>
+          <div class="vehicle-card-content">
+            <h4 style="color: var(--pc-navy); font-weight: 800; font-size: 1.1rem;">Toyota Aqua &amp; Prius Hybrid</h4>
+            <span style="font-size: 0.78rem; color: var(--pc-green); font-weight: bold; margin-top: 2px;">Eco-Lease Special Rate</span>
+            <div style="margin: 12px 0; font-size: 0.85rem; color: #64748B;">
+              Monthly Rental: <strong style="font-size: 1.2rem; color: var(--pc-red);">Rs. 144,500</strong> / mo
+            </div>
+            <a href="calculator.html?type=hybrid&price=8200000" class="btn btn-outline-red btn-sm btn-block" style="margin-top: auto;">Open in Calculator &rarr;</a>
+          </div>
+        </div>
+
+        <!-- SUV -->
+        <div class="vehicle-showcase-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/suv.jpg" alt="Honda Vezel e:HEV / Toyota Raize">
+            <span class="vehicle-badge-overlay">Crossover &amp; Compact SUV</span>
+            <span class="vehicle-price-tag">Rs. 17,500,000</span>
+          </div>
+          <div class="vehicle-card-content">
+            <h4 style="color: var(--pc-navy); font-weight: 800; font-size: 1.1rem;">Honda Vezel e:HEV / Raize</h4>
+            <span style="font-size: 0.78rem; color: var(--pc-red); font-weight: bold; margin-top: 2px;">Up to 7 Years Repayment</span>
+            <div style="margin: 12px 0; font-size: 0.85rem; color: #64748B;">
+              Monthly Rental: <strong style="font-size: 1.2rem; color: var(--pc-red);">Rs. 308,400</strong> / mo
+            </div>
+            <a href="calculator.html?type=suv&price=17500000" class="btn btn-outline-red btn-sm btn-block" style="margin-top: auto;">Open in Calculator &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Sedan -->
+        <div class="vehicle-showcase-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/sedan.jpg" alt="Toyota Premio / Allion / Civic">
+            <span class="vehicle-badge-overlay">Executive Sedan</span>
+            <span class="vehicle-price-tag">Rs. 14,200,000</span>
+          </div>
+          <div class="vehicle-card-content">
+            <h4 style="color: var(--pc-navy); font-weight: 800; font-size: 1.1rem;">Toyota Premio / Civic Sedan</h4>
+            <span style="font-size: 0.78rem; color: var(--pc-navy); font-weight: bold; margin-top: 2px;">Fixed Rate Facility</span>
+            <div style="margin: 12px 0; font-size: 0.85rem; color: #64748B;">
+              Monthly Rental: <strong style="font-size: 1.2rem; color: var(--pc-red);">Rs. 250,200</strong> / mo
+            </div>
+            <a href="calculator.html?type=sedan&price=14200000" class="btn btn-outline-red btn-sm btn-block" style="margin-top: auto;">Open in Calculator &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Commercial Truck -->
+        <div class="vehicle-showcase-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/commercial.jpg" alt="Isuzu Elf / Canter Lorry">
+            <span class="vehicle-badge-overlay">Commercial Logistics</span>
+            <span class="vehicle-price-tag">Rs. 12,800,000</span>
+          </div>
+          <div class="vehicle-card-content">
+            <h4 style="color: var(--pc-navy); font-weight: 800; font-size: 1.1rem;">Isuzu Elf / Fuso Canter</h4>
+            <span style="font-size: 0.78rem; color: var(--pc-gold-dark); font-weight: bold; margin-top: 2px;">Balloon Facility Available</span>
+            <div style="margin: 12px 0; font-size: 0.85rem; color: #64748B;">
+              Monthly Rental: <strong style="font-size: 1.2rem; color: var(--pc-red);">Rs. 225,500</strong> / mo
+            </div>
+            <a href="calculator.html?type=commercial&price=12800000" class="btn btn-outline-red btn-sm btn-block" style="margin-top: auto;">Open in Calculator &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Agricultural Tractor -->
+        <div class="vehicle-showcase-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/tractor.jpg" alt="Agricultural 4WD Tractors &amp; Harvesters">
+            <span class="vehicle-badge-overlay">Agri &amp; Machinery</span>
+            <span class="vehicle-price-tag">Rs. 5,500,000</span>
+          </div>
+          <div class="vehicle-card-content">
+            <h4 style="color: var(--pc-navy); font-weight: 800; font-size: 1.1rem;">Agri 4WD Tractors &amp; Harvesters</h4>
+            <span style="font-size: 0.78rem; color: var(--pc-green); font-weight: bold; margin-top: 2px;">Seasonal Harvest Repayment</span>
+            <div style="margin: 12px 0; font-size: 0.85rem; color: #64748B;">
+              Monthly Rental: <strong style="font-size: 1.2rem; color: var(--pc-red);">Rs. 96,900</strong> / mo
+            </div>
+            <a href="calculator.html?type=tractor&price=5500000" class="btn btn-outline-red btn-sm btn-block" style="margin-top: auto;">Open in Calculator &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Three-Wheeler & Bike -->
+        <div class="vehicle-showcase-card">
+          <div class="vehicle-img-frame">
+            <img src="assets/images/motorbike.jpg" alt="Motorbikes &amp; Bajaj Three Wheelers">
+            <span class="vehicle-badge-overlay">Two &amp; Three Wheelers</span>
+            <span class="vehicle-price-tag">Rs. 1,400,000</span>
+          </div>
+          <div class="vehicle-card-content">
+            <h4 style="color: var(--pc-navy); font-weight: 800; font-size: 1.1rem;">Bajaj Three Wheeler &amp; Bikes</h4>
+            <span style="font-size: 0.78rem; color: var(--pc-red); font-weight: bold; margin-top: 2px;">Same-Day Key Handover</span>
+            <div style="margin: 12px 0; font-size: 0.85rem; color: #64748B;">
+              Monthly Rental: <strong style="font-size: 1.2rem; color: var(--pc-red);">Rs. 24,700</strong> / mo
+            </div>
+            <a href="calculator.html?type=bike&price=1400000" class="btn btn-outline-red btn-sm btn-block" style="margin-top: auto;">Open in Calculator &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Deliveries & Handover Gallery -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge-tag badge-gold">CELEBRATING SUCCESS</span>
+        <h2 class="section-title">Client Vehicle Deliveries &amp; <span>Key Handovers</span></h2>
+        <p class="section-subtitle">Real people, real businesses, moving forward across every province in Sri Lanka.</p>
+      </div>
+
+      <div class="handover-gallery-grid">
+        <div class="handover-card">
+          <img src="assets/images/handover.jpg" alt="Key Handover to Happy Client">
+          <div class="handover-caption">
+            <h4>SUV Delivery Celebration</h4>
+            <p>Mr. &amp; Mrs. Jayawardena receiving their registered SUV keys within 24 hours of loan approval.</p>
+          </div>
+        </div>
+
+        <div class="handover-card">
+          <img src="assets/images/consultation.jpg" alt="Professional Leasing Consultation">
+          <div class="handover-caption">
+            <h4>Personalized Financial Advice</h4>
+            <p>Doorstep lease agreement execution and transparent repayment scheduling with our senior advisor.</p>
+          </div>
+        </div>
+
+        <div class="handover-card">
+          <img src="assets/images/carkeys.jpg" alt="Logbook Cash Release">
+          <div class="handover-caption">
+            <h4>Speed Draft Cash Disbursal</h4>
+            <p>Immediate business liquidity provided against vehicle registration certificate without vehicle impound.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Main Bank Footer -->
+  <footer class="bank-footer" id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <img src="assets/images/peoples_ceylon_logo.jpg" alt="People Ceylon Logo" style="height: 40px; width: 40px; border-radius: 4px;">
+              <h3 style="margin: 0;">PEOPLE CEYLON <span>PRIVATE LIMITED</span></h3>
+            </div>
+            <p style="color: #CBD5E1; margin-bottom: 14px;">People Ceylon Private Limited is dedicated to fueling vehicle mobility, commercial fleets, and working capital across Sri Lanka.</p>
+            <p><strong>Head Office:</strong> Temple Junction, D.S. Senanayaka Street, Ampara, Sri Lanka.</p>
+            <p style="margin-top: 6px;"><strong>Hotline:</strong> (011) 785 5000 | +94 77 000 0000</p>
+            <p><strong>Email:</strong> inquiries@peopleceylon.lk</p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Leasing Packages</h4>
+            <ul class="footer-links-list">
+              <li><a href="packages.html#car">Personal Car & SUV</a></li>
+              <li><a href="packages.html#commercial">Commercial Fleet Trucks</a></li>
+              <li><a href="packages.html#speed">Speed Draft Fast Cash</a></li>
+              <li><a href="packages.html#hybrid">Hybrid & EV Eco-Lease</a></li>
+              <li><a href="packages.html#tuktuk">Three-Wheeler & Bikes</a></li>
+              <li><a href="packages.html#agri">Agri & Heavy Machinery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Quick Tools</h4>
+            <ul class="footer-links-list">
+              <li><a href="calculator.html">Official Lease Calculator</a></li>
+              <li><a href="calculator.html#amortization">Amortization Table</a></li>
+              <li><a href="eligibility.html">Document Checklist</a></li>
+              <li><a href="eligibility.html#branches">Branch Network</a></li>
+              <li><a href="javascript:void(0)" onclick="openApplyModal('Express Application')">Apply Online</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Ampara Branch</h4>
+            <ul class="footer-links-list">
+              <li><a href="eligibility.html#branches">Ampara Main Branch</a></li>
+              <li><a href="eligibility.html#branches">Temple Junction, D.S. Senanayaka St.</a></li>
+              <li><a href="tel:+94632224500">Direct: (063) 222 4500</a></li>
+              <li><a href="eligibility.html#branches">Doorstep Islandwide Service</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Instant Support</h4>
+            <p style="margin-bottom: 12px;">Speak with our senior leasing advisors for tailored fleet quotations or logbook cash advances.</p>
+            <a href="tel:+94632224500" class="btn btn-primary btn-block btn-sm" style="margin-bottom: 8px;">Call Ampara: (063) 222 4500</a>
+            <a href="https://wa.me/94770000000" target="_blank" class="btn btn-gold btn-block btn-sm">WhatsApp Senior Manager</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div>&copy; 2026 People Ceylon Private Limited. All Rights Reserved. Specializing in Vehicle & Equipment Finance.</div>
+        <div style="display: flex; gap: 14px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Fair Lending Charter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Inquiry Modal -->
+  <div class="modal-backdrop" id="applyModal" onclick="if(event.target.id==='applyModal') closeApplyModal()">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Lease Application: <span id="modalProductTitle" style="color: var(--pc-red);">Vehicle Lease</span></h3>
+        <button class="modal-close" onclick="closeApplyModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="handleApplySubmit(event)">
+          <div class="form-group">
+            <label>Full Name (as per NIC / Passport)</label>
+            <input type="text" class="form-input" placeholder="e.g. Ruwan Samantha Perera" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label>Contact Mobile Number</label>
+              <input type="tel" class="form-input" placeholder="07X XXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label>NIC Number</label>
+              <input type="text" class="form-input" placeholder="e.g. 199012345678" required>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label>Vehicle Model / Type</label>
+              <input type="text" class="form-input" placeholder="e.g. Toyota Aqua / Vezel / Elf" required>
+            </div>
+            <div class="form-group">
+              <label>Estimated Market Value (Rs.)</label>
+              <input type="text" class="form-input" placeholder="e.g. 8,500,000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Branch / Service Mode</label>
+            <select class="form-input">
+              <option value="Ampara">Ampara Main Branch (Temple Junction)</option>
+              <option value="Doorstep">Doorstep Islandwide Mobile Service</option>
+            </select>
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <button type="button" class="btn btn-outline-red" onclick="closeApplyModal()">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit Pre-Approval</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Contact Widget (Right Side) -->
+  <div class="floating-contact-widget">
+    <a href="https://wa.me/94770000000?text=Hello%20People%20Ceylon%20Private%20Limited,%20I%20would%20like%20a%20leasing%20quotation." target="_blank" class="floating-contact-btn floating-btn-whatsapp" aria-label="WhatsApp Us">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+      <span class="floating-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+94117855000" class="floating-contact-btn floating-btn-hotline" aria-label="Call Hotline">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="floating-tooltip">Call Hotline: (011) 785 5000</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

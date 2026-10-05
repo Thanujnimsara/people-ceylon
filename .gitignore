@@ -1,0 +1,7 @@
+# Ignore OS & editor files
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+.vscode/
+.idea/
